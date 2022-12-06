@@ -9,7 +9,23 @@
 
 # Beautiful is better than ugly.
 
-[comment]: # (!!! data-background-color="hsl(18, 100%, 75%)")
+[comment]: # (||| data-auto-animate data-background-color="hsl(18, 100%, 75%)")
+
+```python
+def hello_world():
+    print()
+```
+<!-- .element: data-id="code" -->
+
+[comment]: # (||| data-auto-animate data-background-color="hsl(18, 100%, 75%)")
+
+```python
+def hello_world():
+    print("Hello world")
+```
+<!-- .element: data-id="code" -->
+
+[comment]: # (!!!  data-background-color="hsl(36, 100%, 75%)")
 
 # Explicit is better than implicit.
 
