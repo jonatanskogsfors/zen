@@ -10,22 +10,29 @@
 # Beautiful is better than ugly.
 
 [comment]: # (||| data-auto-animate data-background-color="hsl(18, 100%, 75%)")
-
+Beautiful is better than ugly.
 ```python
-def hello_world():
-    print()
+# Don't
+
+def powers(l):
+    p = []
+    for i in range(len(l)):
+        p.append(l[i] * l[i])
+    return p
 ```
 <!-- .element: data-id="code" -->
 
 [comment]: # (||| data-auto-animate data-background-color="hsl(18, 100%, 75%)")
-
+Beautiful is better than ugly.
 ```python
-def hello_world():
-    print("Hello world")
+# Do
+
+def calculate_powers(numbers: list[int]) -> list[int]:
+    return [number ** 2 for number in numbers]
 ```
 <!-- .element: data-id="code" -->
 
-[comment]: # (!!!  data-background-color="hsl(36, 100%, 75%)")
+[comment]: # (!!! data-auto-animate data-background-color="hsl(18, 100%, 75%)")
 
 # Explicit is better than implicit.
 
@@ -49,7 +56,28 @@ def hello_world():
 
 # Readability counts.
 
-[comment]: # (!!! data-background-color="hsl(126, 100%, 75%)")
+[comment]: # (||| data-background-color="hsl(126, 100%, 75%)")
+Readability counts.
+```python
+    def f(x, y):
+        pass
+```
+<!-- .element: data-id="code" -->
+[comment]: # (||| data-auto-animate data-background-color="hsl(126, 100%, 75%)")
+Readability counts.
+```python
+    def calculate_cost(price, count):
+        return price * count
+```
+<!-- .element: data-id="code" -->
+[comment]: # (||| data-auto-animate data-background-color="hsl(126, 100%, 75%)")
+Readability counts.
+```python
+    def calculate_cost(price: int, count: int) -> int:
+        return price * count
+```
+<!-- .element: data-id="code" -->
+[comment]: # (!!! data-auto-animate data-background-color="hsl(126, 100%, 75%)")
 
 # Special cases aren't special enough to break the rules.
 
@@ -97,4 +125,24 @@ def hello_world():
 
 # Namespaces are one honking great idea -- let's do more of those!
 
-[comment]: # (!!! data-background-color="hsl(342, 100%, 75%)")
+[comment]: # (||| data-background-color="hsl(342, 100%, 75%)")
+Namespaces are one honking great idea -- let's do more of those!
+```python
+from foo import *
+from bar import baz
+
+x = calculate(42)
+y = baz(x)
+```
+<!-- .element: data-id="code" -->
+[comment]: # (||| data-auto-animate data-background-color="hsl(342, 100%, 75%)")
+Namespaces are one honking great idea -- let's do more of those!
+```python
+import foo
+import bar
+
+x = foo.calculate(42)
+y = bar.baz(x)
+```
+<!-- .element: data-id="code" -->
+[comment]: # (!!! data-auto-animate data-background-color="hsl(342, 100%, 75%)")

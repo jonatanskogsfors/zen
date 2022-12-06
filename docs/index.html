@@ -32,19 +32,26 @@
 
 </textarea></section>
 <section data-markdown  data-auto-animate data-background-color="hsl(18, 100%, 75%)"><textarea data-template>
-
+Beautiful is better than ugly.
 ```python
-def hello_world():
-    print()
+# Don't
+
+def powers(l):
+    p = []
+    for i in range(len(l)):
+        p.append(l[i] * l[i])
+    return p
 ```
 <!-- .element: data-id="code" -->
 
 </textarea></section>
-<section data-markdown  data-background-color="hsl(36, 100%, 75%)"><textarea data-template>
-
+<section data-markdown  data-auto-animate data-background-color="hsl(18, 100%, 75%)"><textarea data-template>
+Beautiful is better than ugly.
 ```python
-def hello_world():
-    print("Hello world")
+# Do
+
+def calculate_powers(numbers: list[int]) -> list[int]:
+    return [number ** 2 for number in numbers]
 ```
 <!-- .element: data-id="code" -->
 
@@ -75,11 +82,37 @@ def hello_world():
 # Sparse is better than dense.
 
 </textarea></section>
+<section>
 <section data-markdown  data-background-color="hsl(126, 100%, 75%)"><textarea data-template>
 
 # Readability counts.
 
 </textarea></section>
+<section data-markdown  data-auto-animate data-background-color="hsl(126, 100%, 75%)"><textarea data-template>
+Readability counts.
+```python
+    def f(x, y):
+        pass
+```
+<!-- .element: data-id="code" -->
+</textarea></section>
+<section data-markdown  data-auto-animate data-background-color="hsl(126, 100%, 75%)"><textarea data-template>
+Readability counts.
+```python
+    def calculate_cost(price, count):
+        return price * count
+```
+<!-- .element: data-id="code" -->
+</textarea></section>
+<section data-markdown  data-auto-animate data-background-color="hsl(126, 100%, 75%)"><textarea data-template>
+Readability counts.
+```python
+    def calculate_cost(price: int, count: int) -> int:
+        return price * count
+```
+<!-- .element: data-id="code" -->
+</textarea></section>
+</section>
 <section data-markdown  data-background-color="hsl(144, 100%, 75%)"><textarea data-template>
 
 # Special cases aren't special enough to break the rules.
@@ -135,11 +168,35 @@ def hello_world():
 # If the implementation is easy to explain, it may be a good idea.
 
 </textarea></section>
+<section>
 <section data-markdown  data-background-color="hsl(342, 100%, 75%)"><textarea data-template>
 
 # Namespaces are one honking great idea -- let's do more of those!
 
 </textarea></section>
+<section data-markdown  data-auto-animate data-background-color="hsl(342, 100%, 75%)"><textarea data-template>
+Namespaces are one honking great idea -- let's do more of those!
+```python
+from foo import *
+from bar import baz
+
+x = calculate(42)
+y = baz(x)
+```
+<!-- .element: data-id="code" -->
+</textarea></section>
+<section data-markdown  data-auto-animate data-background-color="hsl(342, 100%, 75%)"><textarea data-template>
+Namespaces are one honking great idea -- let's do more of those!
+```python
+import foo
+import bar
+
+x = foo.calculate(42)
+y = bar.baz(x)
+```
+<!-- .element: data-id="code" -->
+</textarea></section>
+</section>
 			</div>
 		</div>
 
